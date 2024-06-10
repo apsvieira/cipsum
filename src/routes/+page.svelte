@@ -71,9 +71,9 @@
 	<button on:click={generate}>Gerar</button>
 
 	{#if generatedText}
-		<div id="generatedText">
+		<div class="generated">
 			<h2>Pronto, copia aí!</h2>
-			<pre>{generatedText}</pre>
+			<p class="generatedText">{generatedText}</p>
 		</div>
 	{/if}
 </div>
