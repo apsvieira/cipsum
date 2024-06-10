@@ -21,7 +21,7 @@
 	<h5>"Rapaz, tu fica aí inventando história..."</h5>
 </div>
 
-<div id="content" class="container">
+<div class="container">
 	<div>
 		<h2>Diabé isso?</h2>
 		<p>
@@ -69,14 +69,13 @@
 		</table>
 	</div>
 	<button on:click={generate}>Gerar</button>
-
-	{#if generatedText}
-		<div class="generated">
-			<h2>Pronto, copia aí!</h2>
-			<p class="generatedText">{generatedText}</p>
-		</div>
-	{/if}
 </div>
+{#if generatedText}
+	<div class="content">
+		<h2>Pronto, copia aí!</h2>
+		<p class="generatedText">{generatedText}</p>
+	</div>
+{/if}
 
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
