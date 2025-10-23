@@ -43,6 +43,15 @@
 			Porra de latim.
 		</p>
 	</div>
+	<div>
+		<h2>E tem API?</h2>
+		<p>
+			Tem sim! Você pode usar a API pra gerar texto direto no seu código.<br />
+			<strong>GET:</strong> <code>/api/generate?quantity=2&type=Parágrafos</code><br />
+			<strong>POST:</strong> <code>/api/generate</code> com body <code>{"{"}"quantity": 2, "type": "Parágrafos"{"}"}</code><br />
+			Tipos disponíveis: Parágrafos, Frases, Palavras, Caracteres
+		</p>
+	</div>
 	<h2>Pois deixa eu ver esse negócio aí...</h2>
 	<div>
 		<table>
